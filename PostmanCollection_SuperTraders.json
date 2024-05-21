@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "6f005360-881e-4840-a484-a000a7c24ed7",
+		"name": "SuperTraders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7223877"
+	},
+	"item": [
+		{
+			"name": "SELL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\" : 2,\n    \"shareId\" : 3,\n    \"quantity\" : 2\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:80/api/transaction/sell",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"transaction",
+						"sell"
+					],
+					"query": [
+						{
+							"key": "share_id",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "quantity",
+							"value": "4",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BUY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\n    \"userId\" : 2,\n    \"shareId\" : 3,\n    \"quantity\" : 20\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:80/api/transaction/buy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"transaction",
+						"buy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SHARE / GETALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/api/share/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"share",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PORTFOLIO / UI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/api/portfolioShare/getPortfolioSharesWithDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"portfolioShare",
+						"getPortfolioSharesWithDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PORTFOLIOSHARE/ GETALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/api/portfolioShare/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"portfolioShare",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER / GETALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/api/user/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"user",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PORTFOLIO / GETALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/api/portfolio/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"portfolio",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TRANSACTIONLOG /GETALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/api/transaction/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"transaction",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
