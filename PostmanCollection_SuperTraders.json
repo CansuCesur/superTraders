@@ -31,23 +31,6 @@
 						"api",
 						"transaction",
 						"sell"
-					],
-					"query": [
-						{
-							"key": "share_id",
-							"value": "1",
-							"disabled": true
-						},
-						{
-							"key": "user_id",
-							"value": "1",
-							"disabled": true
-						},
-						{
-							"key": "quantity",
-							"value": "4",
-							"disabled": true
-						}
 					]
 				}
 			},
